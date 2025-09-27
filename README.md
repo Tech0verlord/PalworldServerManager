@@ -3,11 +3,18 @@ _DOWNLOAD:_ [Download Latest](https://github.com/TianYu-00/PalworldServerManager
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I1U729N)
 
 > [!NOTE]
-Last Tested Game Version: **`v0.3.9.59545`** using PSM: **`v1.2.0`**   
-Current PSM Language Options Available: **`English`** **`Chinese`**
+Last Tested Game Version: **`v0.6.6.79318`** using PSM: **`v1.2.0`**   
+Current PSM Language Options Available: **`English`** **`Chinese (Not Updated)`**
 
-> [!IMPORTANT]
-> This project is no longer being maintained. Please feel free to fork the repository and continue working on it.
+_Quick Updates_
+_______________________
+Hello! I found this server manager and found it was outdated and did not support the current set of Palworld's Dedicated Server's configs.
+I have no experience in Visual Studio nor C#, and the last time I messed with coding was back in 2015, and that was in Java.
+
+So far, I've managed to swap out the old AllowedPlatforms for CrossplayPlatforms, and added config options for the Global Palbox.
+
+
+# OLD README INFO - STILL IMPORTANT
 
 > [!IMPORTANT]
 > It is recommended that you use the backup feature I implemented in update `v1.0.4` and beyond to backup your saved files just in case updating your game server causes a loss of player progression. This is not a bug from my side but a bug from Palworld's side, so do remember to use the backup feature just in case.
