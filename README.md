@@ -13,7 +13,7 @@ I have no experience in Visual Studio nor C#, and the last time I messed with co
 So far, I've managed to swap out the old AllowedPlatforms for CrossplayPlatforms, and added config options for the Global Palbox.
 
 
-# OLD README INFO - STILL IMPORTANT
+# OLD README INFO - STILL IMPORTANT, SOME INFO HAS UPDATED
 
 > [!IMPORTANT]
 > It is recommended that you use the backup feature I implemented in update `v1.0.4` and beyond to backup your saved files just in case updating your game server causes a loss of player progression. This is not a bug from my side but a bug from Palworld's side, so do remember to use the backup feature just in case.
@@ -27,9 +27,9 @@ Some Webhook notification features do require you to connect to your RCON. You c
 _Installation_
 -----------------------
 1) Download    
-2) Create a new folder    
-3) Copy the exe to the new folder    
-4) Run the exe    
+2) Create a new folder
+3) ~~Copy the exe to the new folder~~ Extract the entire archive
+4) Run the EXE
 
 To allow others to join your server and use the rcon feature remotely, you'll need to configure your firewall to open specific ports and set up port forwarding for those ports.   
 Basically:   
