@@ -10,7 +10,7 @@ _Quick Updates_
 Hello! I found this server manager and found it was outdated and did not support the current set of Palworld's Dedicated Server's configs.
 I have no experience in Visual Studio nor C#, and the last time I messed with coding was back in 2015, and that was in Java.
 
-So far, I've managed to swap out the old AllowedPlatforms for CrossplayPlatforms, and added config options for the Global Palbox.
+So far, I've managed to swap out the old AllowedConnectPlatform for CrossplayPlatforms, and added config options for the Global Palbox.
 
 
 # OLD README INFO - STILL IMPORTANT, SOME INFO HAS UPDATED
