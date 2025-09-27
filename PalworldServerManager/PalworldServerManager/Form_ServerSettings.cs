@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -591,8 +592,15 @@ namespace PalworldServerManager
                     // Read the content of the INI file
                     string iniContent = File.ReadAllText(iniFilePath);
 
+                    //Hide passwords in the RichTextBox
+                    //string cleanedIniContent = Regex.Replace(iniContent, "\\w*Password=\"\\w*\\W*\"", "\\w*Password=\"****\"");
+                    string replacePattern = "Password=\"\\w*\\W*\"";
+                    Regex password = new Regex(replacePattern);
+                    string cleanedIniContent = password.Replace(iniContent, "Password=\"*****\"");
+
                     // Display the content in the RichTextBox
-                    richTextBox2.Text = iniContent;
+                    //richTextBox2.Text = iniContent;
+                    richTextBox2.Text = cleanedIniContent;
                 }
                 else
                 {
