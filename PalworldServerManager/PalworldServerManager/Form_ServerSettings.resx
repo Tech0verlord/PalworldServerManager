@@ -1966,6 +1966,9 @@
   <data name="textBox_serverPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
   </data>
+  <data name="textBox_serverPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
   <data name="textBox_serverPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>391, 23</value>
   </data>
@@ -1992,6 +1995,9 @@
   </data>
   <data name="textBox_adminPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
+  </data>
+  <data name="textBox_adminPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
   </data>
   <data name="textBox_adminPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>391, 23</value>
