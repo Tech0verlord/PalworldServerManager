@@ -217,7 +217,7 @@
   <data name="textBox_RESTAPIPort.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="textBox_allowConnectPlatform.ToolTip" xml:space="preserve">
+  <data name="textBox_CrossplayPlatforms.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="textBox_logFormatType.ToolTip" xml:space="preserve">

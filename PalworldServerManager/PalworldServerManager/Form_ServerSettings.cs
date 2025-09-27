@@ -254,7 +254,7 @@ namespace PalworldServerManager
         private string serv_bShowPlayerList;
 
         //
-        private string serv_allowConnectPlatform;
+        private string serv_CrossplayPlatforms;
 
         //
         private string serv_bIsUseBackupSaveData;
@@ -265,6 +265,11 @@ namespace PalworldServerManager
         //
         private string serv_supplyDropSpan;
 
+        //
+        private string serv_bAllowGlobalPalboxImport;
+
+        //
+        private string serv_bAllowGlobalPalboxExport;
 
         /// <summary>
         /// DEFAULT SERVER WORLD SETTINGS
@@ -355,10 +360,12 @@ namespace PalworldServerManager
         private string dserv_RESTAPIEnabled = "False";
         private string dserv_RESTAPIPort = "8212";
         private string dserv_bShowPlayerList = "False";
-        private string dserv_allowConnectPlatform = "Steam";
+        private string dserv_CrossplayPlatforms = "(Steam,Xbox,Ps5,Mac)";
         private string dserv_bIsUseBackupSaveData = "True";
         private string dserv_logFormatType = "Text";
         private string dserv_supplyDropSpan = "180";
+        private string dserv_bAllowGlobalPalboxImport = "False";
+        private string dserv_bAllowGlobalPalboxExport = "True";
 
         public class ServerSettingsPreset
         {
@@ -462,7 +469,7 @@ namespace PalworldServerManager
             public string json_bShowPlayerList { get; set; }
 
             //
-            public string json_allowConnectPlatform { get; set; }
+            public string json_CrossplayPlatforms { get; set; }
 
             //
             public string json_bIsUseBackupSaveData { get; set; }
@@ -472,6 +479,12 @@ namespace PalworldServerManager
 
             //
             public string json_supplyDropSpan { get; set; }
+
+            //
+            public string json_bAllowGlobalPalboxImport { get; set; }
+
+            //
+            public string json_bAllowGlobalPalboxExport { get; set; }
         }
 
 
@@ -610,7 +623,7 @@ namespace PalworldServerManager
                     // Display the content in the RichTextBox
                     //richTextBox2.Text = iniContent;
                     string newWorldSettings = $"[/Script/Pal.PalGameWorldSettings]\n" +
-                        $"OptionSettings=(Difficulty={serv_difficulty},DayTimeSpeedRate={serv_dayTimeSpeedRate},NightTimeSpeedRate={serv_nightTimeSpeedRate},ExpRate={serv_expRate},PalCaptureRate={serv_palCaptureRate},PalSpawnNumRate={serv_palSpawnNumRate},PalDamageRateAttack={serv_palDamageRateAttack},PalDamageRateDefense={serv_palDamageRateDefense},PlayerDamageRateAttack={serv_playerDamageRateAttack},PlayerDamageRateDefense={serv_playerDamageRateDefense},PlayerStomachDecreaceRate={serv_playerStomachDecreaseRate},PlayerStaminaDecreaceRate={serv_playerStaminaDecreaseRate},PlayerAutoHPRegeneRate={serv_playerAutoHpRegenRate},PlayerAutoHpRegeneRateInSleep={serv_playerAutoHpRegenRateInSleep},PalStomachDecreaceRate={serv_palStomachDecreaseRate},PalStaminaDecreaceRate={serv_palStaminaDecreaseRate},PalAutoHPRegeneRate={serv_palAutoHpRegeneRate},PalAutoHpRegeneRateInSleep={serv_palAutoHpRegeneRateInSleep},BuildObjectDamageRate={serv_buildObjectDamageRate},BuildObjectDeteriorationDamageRate={serv_buildObjectDeteriorationDamageRate},CollectionDropRate={serv_collectionDropRate},CollectionObjectHpRate={serv_collectionObjectHpRate},CollectionObjectRespawnSpeedRate={serv_collectionObjectRespawnSpeedRate},EnemyDropItemRate={serv_enemyDropItemRate},DeathPenalty={serv_deathPenalty},bEnablePlayerToPlayerDamage={serv_enablePlayerToPlayerDamage},bEnableFriendlyFire={serv_enableFriendlyFire},bEnableInvaderEnemy={serv_enableInvaderEnemy},bActiveUNKO={serv_activeUNKO},bEnableAimAssistPad={serv_enableAimAssistPad},bEnableAimAssistKeyboard={serv_enableAimAssistKeyboard},DropItemMaxNum={serv_dropItemMaxNum},DropItemMaxNum_UNKO={serv_dropItemMaxNum_UNKO},BaseCampMaxNum={serv_baseCampMaxNum},BaseCampWorkerMaxNum={serv_baseCampWorkerMaxNum},DropItemAliveMaxHours={serv_dropItemAliveMaxHours},bAutoResetGuildNoOnlinePlayers={serv_autoResetGuildNoOnlinePlayers},AutoResetGuildTimeNoOnlinePlayers={serv_autoResetGuildTimeNoOnlinePlayers},GuildPlayerMaxNum={serv_guildPlayerMaxNum},PalEggDefaultHatchingTime={serv_palEggDefaultHatchingTime},WorkSpeedRate={serv_workSpeedRate},bIsMultiplay={serv_isMultiplay},bIsPvP={serv_isPvP},bCanPickupOtherGuildDeathPenaltyDrop={serv_canPickupOtherGuildDeathPenaltyDrop},bEnableNonLoginPenalty={serv_enableNonLoginPenalty},bEnableFastTravel={serv_enableFastTravel},bIsStartLocationSelectByMap={serv_isStartLocationSelectByMap},bExistPlayerAfterLogout={serv_existPlayerAfterLogout},bEnableDefenseOtherGuildPlayer={serv_enableDefenseOtherGuildPlayer},CoopPlayerMaxNum={serv_coopPlayerMaxNum},ServerPlayerMaxNum={serv_serverPlayerMaxNum},ServerName=\"{serv_serverName}\",ServerDescription=\"{serv_serverDescription}\",AdminPassword=\"{serv_adminPassword}\",ServerPassword=\"{serv_serverPassword}\",PublicPort={serv_publicPort},PublicIP=\"{serv_publicIP}\",RCONEnabled={serv_rconEnabled},RCONPort={serv_rconPort},Region=\"{serv_region}\",bUseAuth={serv_useAuth},BanListURL=\"{serv_banListURL}\",BaseCampMaxNumInGuild={serv_baseCampMaxNumInGuild},bInvisibleOtherGuildBaseCampAreaFX={serv_bInvisibleOtherGuildBaseCampAreaFX},AutoSaveSpan={serv_autoSaveSpan},RESTAPIEnabled={serv_RESTAPIEnabled},RESTAPIPort={serv_RESTAPIPort},bShowPlayerList={serv_bShowPlayerList},AllowConnectPlatform={serv_allowConnectPlatform},bIsUseBackupSaveData={serv_bIsUseBackupSaveData},LogFormatType={serv_logFormatType},SupplyDropSpan={serv_supplyDropSpan})";
+                        $"OptionSettings=(Difficulty={serv_difficulty},DayTimeSpeedRate={serv_dayTimeSpeedRate},NightTimeSpeedRate={serv_nightTimeSpeedRate},ExpRate={serv_expRate},PalCaptureRate={serv_palCaptureRate},PalSpawnNumRate={serv_palSpawnNumRate},PalDamageRateAttack={serv_palDamageRateAttack},PalDamageRateDefense={serv_palDamageRateDefense},PlayerDamageRateAttack={serv_playerDamageRateAttack},PlayerDamageRateDefense={serv_playerDamageRateDefense},PlayerStomachDecreaceRate={serv_playerStomachDecreaseRate},PlayerStaminaDecreaceRate={serv_playerStaminaDecreaseRate},PlayerAutoHPRegeneRate={serv_playerAutoHpRegenRate},PlayerAutoHpRegeneRateInSleep={serv_playerAutoHpRegenRateInSleep},PalStomachDecreaceRate={serv_palStomachDecreaseRate},PalStaminaDecreaceRate={serv_palStaminaDecreaseRate},PalAutoHPRegeneRate={serv_palAutoHpRegeneRate},PalAutoHpRegeneRateInSleep={serv_palAutoHpRegeneRateInSleep},BuildObjectDamageRate={serv_buildObjectDamageRate},BuildObjectDeteriorationDamageRate={serv_buildObjectDeteriorationDamageRate},CollectionDropRate={serv_collectionDropRate},CollectionObjectHpRate={serv_collectionObjectHpRate},CollectionObjectRespawnSpeedRate={serv_collectionObjectRespawnSpeedRate},EnemyDropItemRate={serv_enemyDropItemRate},DeathPenalty={serv_deathPenalty},bEnablePlayerToPlayerDamage={serv_enablePlayerToPlayerDamage},bEnableFriendlyFire={serv_enableFriendlyFire},bEnableInvaderEnemy={serv_enableInvaderEnemy},bActiveUNKO={serv_activeUNKO},bEnableAimAssistPad={serv_enableAimAssistPad},bEnableAimAssistKeyboard={serv_enableAimAssistKeyboard},DropItemMaxNum={serv_dropItemMaxNum},DropItemMaxNum_UNKO={serv_dropItemMaxNum_UNKO},BaseCampMaxNum={serv_baseCampMaxNum},BaseCampWorkerMaxNum={serv_baseCampWorkerMaxNum},DropItemAliveMaxHours={serv_dropItemAliveMaxHours},bAutoResetGuildNoOnlinePlayers={serv_autoResetGuildNoOnlinePlayers},AutoResetGuildTimeNoOnlinePlayers={serv_autoResetGuildTimeNoOnlinePlayers},GuildPlayerMaxNum={serv_guildPlayerMaxNum},PalEggDefaultHatchingTime={serv_palEggDefaultHatchingTime},WorkSpeedRate={serv_workSpeedRate},bIsMultiplay={serv_isMultiplay},bIsPvP={serv_isPvP},bCanPickupOtherGuildDeathPenaltyDrop={serv_canPickupOtherGuildDeathPenaltyDrop},bEnableNonLoginPenalty={serv_enableNonLoginPenalty},bEnableFastTravel={serv_enableFastTravel},bIsStartLocationSelectByMap={serv_isStartLocationSelectByMap},bExistPlayerAfterLogout={serv_existPlayerAfterLogout},bEnableDefenseOtherGuildPlayer={serv_enableDefenseOtherGuildPlayer},CoopPlayerMaxNum={serv_coopPlayerMaxNum},ServerPlayerMaxNum={serv_serverPlayerMaxNum},ServerName=\"{serv_serverName}\",ServerDescription=\"{serv_serverDescription}\",AdminPassword=\"{serv_adminPassword}\",ServerPassword=\"{serv_serverPassword}\",PublicPort={serv_publicPort},PublicIP=\"{serv_publicIP}\",RCONEnabled={serv_rconEnabled},RCONPort={serv_rconPort},Region=\"{serv_region}\",bUseAuth={serv_useAuth},BanListURL=\"{serv_banListURL}\",BaseCampMaxNumInGuild={serv_baseCampMaxNumInGuild},bInvisibleOtherGuildBaseCampAreaFX={serv_bInvisibleOtherGuildBaseCampAreaFX},AutoSaveSpan={serv_autoSaveSpan},RESTAPIEnabled={serv_RESTAPIEnabled},RESTAPIPort={serv_RESTAPIPort},bShowPlayerList={serv_bShowPlayerList},CrossplayPlatforms={serv_CrossplayPlatforms},bIsUseBackupSaveData={serv_bIsUseBackupSaveData},LogFormatType={serv_logFormatType},SupplyDropSpan={serv_supplyDropSpan},bAllowGobalPalboxImport={serv_bAllowGlobalPalboxImport},bAllowGobalPalboxExport={serv_bAllowGlobalPalboxExport})";
                     File.WriteAllText(iniFilePath, newWorldSettings);
                     //return true to indicate success
                     return true;
@@ -717,11 +730,13 @@ namespace PalworldServerManager
             comboBox_RESTAPIEnabled.Text = dserv_RESTAPIEnabled;
             textBox_RESTAPIPort.Text = dserv_RESTAPIPort;
             comboBox_bShowPlayerList.Text = dserv_bShowPlayerList;
-            textBox_allowConnectPlatform.Text = dserv_allowConnectPlatform;
+            textBox_CrossplayPlatforms.Text = dserv_CrossplayPlatforms;
             comboBox_bIsUseBackupSaveData.Text = dserv_bIsUseBackupSaveData;
             textBox_logFormatType.Text = dserv_logFormatType;
             textBox_supplyDropSpan.Text = dserv_supplyDropSpan;
-            
+            comboBox_bAllowGlobalPalboxImport.Text = dserv_bAllowGlobalPalboxImport;
+            comboBox_bAllowGlobalPalboxExport.Text = dserv_bAllowGlobalPalboxExport;
+
         }
 
         private void ReadSettingControlsToVariables()
@@ -820,11 +835,14 @@ namespace PalworldServerManager
             serv_RESTAPIEnabled = comboBox_RESTAPIEnabled.Text;
             serv_RESTAPIPort = textBox_RESTAPIPort.Text;
             serv_bShowPlayerList = comboBox_bShowPlayerList.Text;
-            serv_allowConnectPlatform = textBox_allowConnectPlatform.Text;
+            serv_CrossplayPlatforms = textBox_CrossplayPlatforms.Text;
             serv_bIsUseBackupSaveData = comboBox_bIsUseBackupSaveData.Text;
             serv_logFormatType = textBox_logFormatType.Text;
             serv_supplyDropSpan = textBox_supplyDropSpan.Text;
 
+            // New 09/07/2025
+            serv_bAllowGlobalPalboxImport = comboBox_bAllowGlobalPalboxImport.Text;
+            serv_bAllowGlobalPalboxExport = comboBox_bAllowGlobalPalboxExport.Text;
         }
 
 
@@ -925,10 +943,15 @@ namespace PalworldServerManager
                 json_RESTAPIEnabled = comboBox_RESTAPIEnabled.Text,
                 json_RESTAPIPort = textBox_RESTAPIPort.Text,
                 json_bShowPlayerList = comboBox_bShowPlayerList.Text,
-                json_allowConnectPlatform = textBox_allowConnectPlatform.Text,
+                json_CrossplayPlatforms = textBox_CrossplayPlatforms.Text,
                 json_bIsUseBackupSaveData = comboBox_bIsUseBackupSaveData.Text,
                 json_logFormatType = textBox_logFormatType.Text,
-                json_supplyDropSpan = textBox_supplyDropSpan.Text
+                json_supplyDropSpan = textBox_supplyDropSpan.Text,
+
+                // New 09/07/2025
+
+                json_bAllowGlobalPalboxImport = comboBox_bAllowGlobalPalboxImport.Text,
+                json_bAllowGlobalPalboxExport = comboBox_bAllowGlobalPalboxExport.Text,
 
             };
 
@@ -1041,11 +1064,13 @@ namespace PalworldServerManager
                 comboBox_RESTAPIEnabled.Text = settings.json_RESTAPIEnabled;
                 textBox_RESTAPIPort.Text = settings.json_RESTAPIPort;
                 comboBox_bShowPlayerList.Text = settings.json_bShowPlayerList; 
-                textBox_allowConnectPlatform.Text = settings.json_allowConnectPlatform;
+                textBox_CrossplayPlatforms.Text = settings.json_CrossplayPlatforms;
                 comboBox_bIsUseBackupSaveData.Text = settings.json_bIsUseBackupSaveData;
                 textBox_logFormatType.Text = settings.json_logFormatType;
                 textBox_supplyDropSpan.Text = settings.json_supplyDropSpan;
 
+                comboBox_bAllowGlobalPalboxImport.Text = settings.json_bAllowGlobalPalboxImport;
+                comboBox_bAllowGlobalPalboxExport.Text = settings.json_bAllowGlobalPalboxExport;
                 //MessageBox.Show("Settings loaded successfully.");
             }
             else
@@ -1142,10 +1167,13 @@ namespace PalworldServerManager
                     json_RESTAPIEnabled = dserv_RESTAPIEnabled,
                     json_RESTAPIPort = dserv_RESTAPIPort,
                     json_bShowPlayerList = dserv_bShowPlayerList,
-                    json_allowConnectPlatform = dserv_allowConnectPlatform,
+                    json_CrossplayPlatforms = dserv_CrossplayPlatforms,
                     json_bIsUseBackupSaveData = dserv_bIsUseBackupSaveData,
                     json_logFormatType = dserv_logFormatType,
-                    json_supplyDropSpan = dserv_supplyDropSpan
+                    json_supplyDropSpan = dserv_supplyDropSpan,
+                    // New 09/07/2025
+                    json_bAllowGlobalPalboxImport = dserv_bAllowGlobalPalboxImport,
+                    json_bAllowGlobalPalboxExport = dserv_bAllowGlobalPalboxExport
 
                 };
 

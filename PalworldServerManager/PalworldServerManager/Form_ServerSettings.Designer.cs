@@ -176,13 +176,17 @@ namespace PalworldServerManager
             textBox_baseCampMaxNumInGuild = new System.Windows.Forms.TextBox();
             textBox_autoSaveSpan = new System.Windows.Forms.TextBox();
             textBox_RESTAPIPort = new System.Windows.Forms.TextBox();
-            textBox_allowConnectPlatform = new System.Windows.Forms.TextBox();
+            textBox_CrossplayPlatforms = new System.Windows.Forms.TextBox();
             textBox_logFormatType = new System.Windows.Forms.TextBox();
             textBox_supplyDropSpan = new System.Windows.Forms.TextBox();
             comboBox_bInvisibleOtherGuildBaseCampAreaFX = new System.Windows.Forms.ComboBox();
             comboBox_RESTAPIEnabled = new System.Windows.Forms.ComboBox();
             comboBox_bShowPlayerList = new System.Windows.Forms.ComboBox();
             comboBox_bIsUseBackupSaveData = new System.Windows.Forms.ComboBox();
+            comboBox_bAllowGlobalPalboxImport = new System.Windows.Forms.ComboBox();
+            comboBox_bAllowGlobalPalboxExport = new System.Windows.Forms.ComboBox();
+            label64 = new System.Windows.Forms.Label();
+            label86 = new System.Windows.Forms.Label();
             panel3 = new System.Windows.Forms.Panel();
             label71 = new System.Windows.Forms.Label();
             tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -438,13 +442,17 @@ namespace PalworldServerManager
             tableLayoutPanel_worldsettings.Controls.Add(textBox_baseCampMaxNumInGuild, 1, 62);
             tableLayoutPanel_worldsettings.Controls.Add(textBox_autoSaveSpan, 1, 64);
             tableLayoutPanel_worldsettings.Controls.Add(textBox_RESTAPIPort, 1, 66);
-            tableLayoutPanel_worldsettings.Controls.Add(textBox_allowConnectPlatform, 1, 68);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_CrossplayPlatforms, 1, 68);
             tableLayoutPanel_worldsettings.Controls.Add(textBox_logFormatType, 1, 70);
             tableLayoutPanel_worldsettings.Controls.Add(textBox_supplyDropSpan, 1, 71);
             tableLayoutPanel_worldsettings.Controls.Add(comboBox_bInvisibleOtherGuildBaseCampAreaFX, 1, 63);
             tableLayoutPanel_worldsettings.Controls.Add(comboBox_RESTAPIEnabled, 1, 65);
             tableLayoutPanel_worldsettings.Controls.Add(comboBox_bShowPlayerList, 1, 67);
             tableLayoutPanel_worldsettings.Controls.Add(comboBox_bIsUseBackupSaveData, 1, 69);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_bAllowGlobalPalboxImport, 1, 72);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_bAllowGlobalPalboxExport, 1, 73);
+            tableLayoutPanel_worldsettings.Controls.Add(label64, 0, 72);
+            tableLayoutPanel_worldsettings.Controls.Add(label86, 0, 73);
             tableLayoutPanel_worldsettings.Name = "tableLayoutPanel_worldsettings";
             // 
             // comboBox_useAuth
@@ -1251,10 +1259,10 @@ namespace PalworldServerManager
             resources.ApplyResources(textBox_RESTAPIPort, "textBox_RESTAPIPort");
             textBox_RESTAPIPort.Name = "textBox_RESTAPIPort";
             // 
-            // textBox_allowConnectPlatform
+            // textBox_CrossplayPlatforms
             // 
-            resources.ApplyResources(textBox_allowConnectPlatform, "textBox_allowConnectPlatform");
-            textBox_allowConnectPlatform.Name = "textBox_allowConnectPlatform";
+            resources.ApplyResources(textBox_CrossplayPlatforms, "textBox_CrossplayPlatforms");
+            textBox_CrossplayPlatforms.Name = "textBox_CrossplayPlatforms";
             // 
             // textBox_logFormatType
             // 
@@ -1297,6 +1305,32 @@ namespace PalworldServerManager
             comboBox_bIsUseBackupSaveData.FormattingEnabled = true;
             comboBox_bIsUseBackupSaveData.Items.AddRange(new object[] { resources.GetString("comboBox_bIsUseBackupSaveData.Items"), resources.GetString("comboBox_bIsUseBackupSaveData.Items1") });
             comboBox_bIsUseBackupSaveData.Name = "comboBox_bIsUseBackupSaveData";
+            // 
+            // comboBox_bAllowGlobalPalboxImport
+            // 
+            resources.ApplyResources(comboBox_bAllowGlobalPalboxImport, "comboBox_bAllowGlobalPalboxImport");
+            comboBox_bAllowGlobalPalboxImport.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_bAllowGlobalPalboxImport.FormattingEnabled = true;
+            comboBox_bAllowGlobalPalboxImport.Items.AddRange(new object[] { resources.GetString("comboBox_bAllowGlobalPalboxImport.Items"), resources.GetString("comboBox_bAllowGlobalPalboxImport.Items1") });
+            comboBox_bAllowGlobalPalboxImport.Name = "comboBox_bAllowGlobalPalboxImport";
+            // 
+            // comboBox_bAllowGlobalPalboxExport
+            // 
+            resources.ApplyResources(comboBox_bAllowGlobalPalboxExport, "comboBox_bAllowGlobalPalboxExport");
+            comboBox_bAllowGlobalPalboxExport.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_bAllowGlobalPalboxExport.FormattingEnabled = true;
+            comboBox_bAllowGlobalPalboxExport.Items.AddRange(new object[] { resources.GetString("comboBox_bAllowGlobalPalboxExport.Items"), resources.GetString("comboBox_bAllowGlobalPalboxExport.Items1") });
+            comboBox_bAllowGlobalPalboxExport.Name = "comboBox_bAllowGlobalPalboxExport";
+            // 
+            // label64
+            // 
+            resources.ApplyResources(label64, "label64");
+            label64.Name = "label64";
+            // 
+            // label86
+            // 
+            resources.ApplyResources(label86, "label86");
+            label86.Name = "label86";
             // 
             // panel3
             // 
@@ -1760,12 +1794,16 @@ namespace PalworldServerManager
         private System.Windows.Forms.TextBox textBox_baseCampMaxNumInGuild;
         private System.Windows.Forms.TextBox textBox_autoSaveSpan;
         private System.Windows.Forms.TextBox textBox_RESTAPIPort;
-        private System.Windows.Forms.TextBox textBox_allowConnectPlatform;
+        private System.Windows.Forms.TextBox textBox_CrossplayPlatforms;
         private System.Windows.Forms.TextBox textBox_logFormatType;
         private System.Windows.Forms.TextBox textBox_supplyDropSpan;
         private System.Windows.Forms.ComboBox comboBox_bInvisibleOtherGuildBaseCampAreaFX;
         private System.Windows.Forms.ComboBox comboBox_RESTAPIEnabled;
         private System.Windows.Forms.ComboBox comboBox_bShowPlayerList;
         private System.Windows.Forms.ComboBox comboBox_bIsUseBackupSaveData;
+        private System.Windows.Forms.ComboBox comboBox_bAllowGlobalPalboxImport;
+        private System.Windows.Forms.ComboBox comboBox_bAllowGlobalPalboxExport;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label86;
     }
 }
