@@ -7,7 +7,7 @@ Last Tested Game Version: **`v0.6.6.79318`** using PSM: **`v1.2.0`**
 Current PSM Language Options Available: **`English`** **`Chinese (Not Updated)`**
 
 _Quick Updates_
-_______________________
+-----------------------
 Hello! I found this server manager and found it was outdated and did not support the current set of Palworld's Dedicated Server's configs.
 I have no experience in Visual Studio nor C#, and the last time I messed with coding was back in 2015, and that was in Java.
 
