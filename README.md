@@ -13,6 +13,13 @@ I have no experience in Visual Studio nor C#, and the last time I messed with co
 So far, I've managed to swap out the old AllowedConnectPlatform for CrossplayPlatforms, and added config options for the Global Palbox.
 
 
+
+_Current Previews_
+-----------------------
+
+**`Tech0verlord Update - v1.1, Hidden Passwords`**  
+<img alt="Techoverlord Update - v1.1" src="https://github.com/user-attachments/assets/b000ca72-eae2-4355-ad37-b9606e4f734f" style="width:100%; height: auto;" />
+
 # OLD README INFO - STILL IMPORTANT, SOME INFO HAS UPDATED
 
 > [!IMPORTANT]
@@ -54,6 +61,7 @@ New-NetFirewallRule -DisplayName "Palworld Server" -Direction Inbound -LocalPort
 
 _Previews_
 -----------------------
+
 
 **`v1.1.5 Server Settings Preview`**  
 <img src="https://github.com/TianYu-00/PalworldServerManager/assets/66271788/ecc453e8-b2ba-49e7-ab6d-934219177adc" alt="Image1" style="width: 100%; height: auto;">   
