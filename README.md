@@ -2,7 +2,7 @@
 _DOWNLOAD:_ [Download Latest](https://github.com/Tech0verlord/PalworldServerManager/releases/latest)    
 
 > [!NOTE]
-Last Tested Game Version: **`v0.6.6.79318`** using PSM: **`v1.2.0`**   
+Last Tested Game Version: **`v0.6.6.79318`** using PSM: **`Tech0verlord Update - v1`**   
 Current PSM Language Options Available: **`English`** **`Chinese (Not Updated)`**
 
 _Quick Updates_
