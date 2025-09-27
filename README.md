@@ -1,6 +1,5 @@
 # PalworldServerManager - Simple server creating and managing tool.    
-_DOWNLOAD:_ [Download Latest](https://github.com/TianYu-00/PalworldServerManager/releases/latest)    
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I1U729N)
+_DOWNLOAD:_ [Download Latest](https://github.com/Tech0verlord/PalworldServerManager/releases/latest)    
 
 > [!NOTE]
 Last Tested Game Version: **`v0.6.6.79318`** using PSM: **`v1.2.0`**   
