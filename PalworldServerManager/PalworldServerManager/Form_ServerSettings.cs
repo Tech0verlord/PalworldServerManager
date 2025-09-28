@@ -266,11 +266,21 @@ namespace PalworldServerManager
         //
         private string serv_supplyDropSpan;
 
+        // New 09/26/25
         //
         private string serv_bAllowGlobalPalboxImport;
 
         //
         private string serv_bAllowGlobalPalboxExport;
+
+        // New 09/27/25
+        
+        //
+        private string serv_RandomizerType;
+        //
+        private string serv_bIsRandomizerPalLevelRandom;
+        //
+        private string serv_RandomizerSeed;
 
         /// <summary>
         /// DEFAULT SERVER WORLD SETTINGS
@@ -367,6 +377,9 @@ namespace PalworldServerManager
         private string dserv_supplyDropSpan = "180";
         private string dserv_bAllowGlobalPalboxImport = "False";
         private string dserv_bAllowGlobalPalboxExport = "True";
+        private string dserv_RandomizerType = "None";
+        private string dserv_bIsRandomizerPalLevelRandom = "False";
+        private string dserv_RandomizerSeed = "";
 
         public class ServerSettingsPreset
         {
@@ -486,6 +499,15 @@ namespace PalworldServerManager
 
             //
             public string json_bAllowGlobalPalboxExport { get; set; }
+
+            //
+            public string json_RandomizerType { get; set; }
+
+            //    
+            public string json_bIsRandomizerPalLevelRandom { get; set; }
+
+            //
+            public string json_RandomizerSeed { get; set; }
         }
 
 
@@ -518,6 +540,15 @@ namespace PalworldServerManager
             comboBox_existPlayerAfterLogout.MouseWheel += ComboBox_MouseWheel;
             comboBox_enableDefenseOtherGuildPlayer.MouseWheel += ComboBox_MouseWheel;
             comboBox_useAuth.MouseWheel += ComboBox_MouseWheel;
+            comboBox_bInvisibleOtherGuildBaseCampAreaFX.MouseWheel += ComboBox_MouseWheel;
+            comboBox_RESTAPIEnabled.MouseWheel += ComboBox_MouseWheel;
+            comboBox_bShowPlayerList.MouseWheel += ComboBox_MouseWheel;
+            comboBox_bIsUseBackupSaveData.MouseWheel += ComboBox_MouseWheel;
+            comboBox_bAllowGlobalPalboxImport.MouseWheel += ComboBox_MouseWheel;
+            comboBox_bAllowGlobalPalboxExport.MouseWheel += ComboBox_MouseWheel;
+            comboBox_RandomizerType.MouseWheel += ComboBox_MouseWheel;
+            comboBox_bIsRandomizerPalLevelRandom.MouseWheel += ComboBox_MouseWheel;
+
         }
 
         private void ComboBox_MouseWheel(object sender, MouseEventArgs e)
@@ -631,7 +662,85 @@ namespace PalworldServerManager
                     // Display the content in the RichTextBox
                     //richTextBox2.Text = iniContent;
                     string newWorldSettings = $"[/Script/Pal.PalGameWorldSettings]\n" +
-                        $"OptionSettings=(Difficulty={serv_difficulty},DayTimeSpeedRate={serv_dayTimeSpeedRate},NightTimeSpeedRate={serv_nightTimeSpeedRate},ExpRate={serv_expRate},PalCaptureRate={serv_palCaptureRate},PalSpawnNumRate={serv_palSpawnNumRate},PalDamageRateAttack={serv_palDamageRateAttack},PalDamageRateDefense={serv_palDamageRateDefense},PlayerDamageRateAttack={serv_playerDamageRateAttack},PlayerDamageRateDefense={serv_playerDamageRateDefense},PlayerStomachDecreaceRate={serv_playerStomachDecreaseRate},PlayerStaminaDecreaceRate={serv_playerStaminaDecreaseRate},PlayerAutoHPRegeneRate={serv_playerAutoHpRegenRate},PlayerAutoHpRegeneRateInSleep={serv_playerAutoHpRegenRateInSleep},PalStomachDecreaceRate={serv_palStomachDecreaseRate},PalStaminaDecreaceRate={serv_palStaminaDecreaseRate},PalAutoHPRegeneRate={serv_palAutoHpRegeneRate},PalAutoHpRegeneRateInSleep={serv_palAutoHpRegeneRateInSleep},BuildObjectDamageRate={serv_buildObjectDamageRate},BuildObjectDeteriorationDamageRate={serv_buildObjectDeteriorationDamageRate},CollectionDropRate={serv_collectionDropRate},CollectionObjectHpRate={serv_collectionObjectHpRate},CollectionObjectRespawnSpeedRate={serv_collectionObjectRespawnSpeedRate},EnemyDropItemRate={serv_enemyDropItemRate},DeathPenalty={serv_deathPenalty},bEnablePlayerToPlayerDamage={serv_enablePlayerToPlayerDamage},bEnableFriendlyFire={serv_enableFriendlyFire},bEnableInvaderEnemy={serv_enableInvaderEnemy},bActiveUNKO={serv_activeUNKO},bEnableAimAssistPad={serv_enableAimAssistPad},bEnableAimAssistKeyboard={serv_enableAimAssistKeyboard},DropItemMaxNum={serv_dropItemMaxNum},DropItemMaxNum_UNKO={serv_dropItemMaxNum_UNKO},BaseCampMaxNum={serv_baseCampMaxNum},BaseCampWorkerMaxNum={serv_baseCampWorkerMaxNum},DropItemAliveMaxHours={serv_dropItemAliveMaxHours},bAutoResetGuildNoOnlinePlayers={serv_autoResetGuildNoOnlinePlayers},AutoResetGuildTimeNoOnlinePlayers={serv_autoResetGuildTimeNoOnlinePlayers},GuildPlayerMaxNum={serv_guildPlayerMaxNum},PalEggDefaultHatchingTime={serv_palEggDefaultHatchingTime},WorkSpeedRate={serv_workSpeedRate},bIsMultiplay={serv_isMultiplay},bIsPvP={serv_isPvP},bCanPickupOtherGuildDeathPenaltyDrop={serv_canPickupOtherGuildDeathPenaltyDrop},bEnableNonLoginPenalty={serv_enableNonLoginPenalty},bEnableFastTravel={serv_enableFastTravel},bIsStartLocationSelectByMap={serv_isStartLocationSelectByMap},bExistPlayerAfterLogout={serv_existPlayerAfterLogout},bEnableDefenseOtherGuildPlayer={serv_enableDefenseOtherGuildPlayer},CoopPlayerMaxNum={serv_coopPlayerMaxNum},ServerPlayerMaxNum={serv_serverPlayerMaxNum},ServerName=\"{serv_serverName}\",ServerDescription=\"{serv_serverDescription}\",AdminPassword=\"{serv_adminPassword}\",ServerPassword=\"{serv_serverPassword}\",PublicPort={serv_publicPort},PublicIP=\"{serv_publicIP}\",RCONEnabled={serv_rconEnabled},RCONPort={serv_rconPort},Region=\"{serv_region}\",bUseAuth={serv_useAuth},BanListURL=\"{serv_banListURL}\",BaseCampMaxNumInGuild={serv_baseCampMaxNumInGuild},bInvisibleOtherGuildBaseCampAreaFX={serv_bInvisibleOtherGuildBaseCampAreaFX},AutoSaveSpan={serv_autoSaveSpan},RESTAPIEnabled={serv_RESTAPIEnabled},RESTAPIPort={serv_RESTAPIPort},bShowPlayerList={serv_bShowPlayerList},CrossplayPlatforms={serv_CrossplayPlatforms},bIsUseBackupSaveData={serv_bIsUseBackupSaveData},LogFormatType={serv_logFormatType},SupplyDropSpan={serv_supplyDropSpan},bAllowGobalPalboxImport={serv_bAllowGlobalPalboxImport},bAllowGobalPalboxExport={serv_bAllowGlobalPalboxExport})";
+                                              $"OptionSettings=(" +
+                                                $"Difficulty={serv_difficulty}," +
+                                                $"DayTimeSpeedRate={serv_dayTimeSpeedRate}," +
+                                                $"NightTimeSpeedRate={serv_nightTimeSpeedRate}," +
+                                                $"ExpRate={serv_expRate}," +
+                                                $"PalCaptureRate={serv_palCaptureRate}," +
+                                                $"PalSpawnNumRate={serv_palSpawnNumRate}," +
+                                                $"PalDamageRateAttack={serv_palDamageRateAttack}," +
+                                                $"PalDamageRateDefense={serv_palDamageRateDefense}," +
+                                                $"PlayerDamageRateAttack={serv_playerDamageRateAttack}," +
+                                                $"PlayerDamageRateDefense={serv_playerDamageRateDefense}," +
+                                                $"PlayerStomachDecreaceRate={serv_playerStomachDecreaseRate}," +
+                                                $"PlayerStaminaDecreaceRate={serv_playerStaminaDecreaseRate}," +
+                                                $"PlayerAutoHPRegeneRate={serv_playerAutoHpRegenRate}," +
+                                                $"PlayerAutoHpRegeneRateInSleep={serv_playerAutoHpRegenRateInSleep}," +
+                                                $"PalStomachDecreaceRate={serv_palStomachDecreaseRate}," +
+                                                $"PalStaminaDecreaceRate={serv_palStaminaDecreaseRate}," +
+                                                $"PalAutoHPRegeneRate={serv_palAutoHpRegeneRate}," +
+                                                $"PalAutoHpRegeneRateInSleep={serv_palAutoHpRegeneRateInSleep}," +
+                                                $"BuildObjectDamageRate={serv_buildObjectDamageRate}," +
+                                                $"BuildObjectDeteriorationDamageRate={serv_buildObjectDeteriorationDamageRate}," +
+                                                $"CollectionDropRate={serv_collectionDropRate}," +
+                                                $"CollectionObjectHpRate={serv_collectionObjectHpRate}," +
+                                                $"CollectionObjectRespawnSpeedRate={serv_collectionObjectRespawnSpeedRate}," +
+                                                $"EnemyDropItemRate={serv_enemyDropItemRate}," +
+                                                $"DeathPenalty={serv_deathPenalty}," +
+                                                $"bEnablePlayerToPlayerDamage={serv_enablePlayerToPlayerDamage}," +
+                                                $"bEnableFriendlyFire={serv_enableFriendlyFire}," +
+                                                $"bEnableInvaderEnemy={serv_enableInvaderEnemy}," +
+                                                $"bActiveUNKO={serv_activeUNKO}," +
+                                                $"bEnableAimAssistPad={serv_enableAimAssistPad}," +
+                                                $"bEnableAimAssistKeyboard={serv_enableAimAssistKeyboard}," +
+                                                $"DropItemMaxNum={serv_dropItemMaxNum}," +
+                                                $"DropItemMaxNum_UNKO={serv_dropItemMaxNum_UNKO}," +
+                                                $"BaseCampMaxNum={serv_baseCampMaxNum}," +
+                                                $"BaseCampWorkerMaxNum={serv_baseCampWorkerMaxNum}," +
+                                                $"DropItemAliveMaxHours={serv_dropItemAliveMaxHours}," +
+                                                $"bAutoResetGuildNoOnlinePlayers={serv_autoResetGuildNoOnlinePlayers}," +
+                                                $"AutoResetGuildTimeNoOnlinePlayers={serv_autoResetGuildTimeNoOnlinePlayers}," +
+                                                $"GuildPlayerMaxNum={serv_guildPlayerMaxNum}," +
+                                                $"PalEggDefaultHatchingTime={serv_palEggDefaultHatchingTime}," +
+                                                $"WorkSpeedRate={serv_workSpeedRate}," +
+                                                $"bIsMultiplay={serv_isMultiplay}," +
+                                                $"bIsPvP={serv_isPvP}," +
+                                                $"bCanPickupOtherGuildDeathPenaltyDrop={serv_canPickupOtherGuildDeathPenaltyDrop}," +
+                                                $"bEnableNonLoginPenalty={serv_enableNonLoginPenalty}," +
+                                                $"bEnableFastTravel={serv_enableFastTravel}," +
+                                                $"bIsStartLocationSelectByMap={serv_isStartLocationSelectByMap}," +
+                                                $"bExistPlayerAfterLogout={serv_existPlayerAfterLogout}," +
+                                                $"bEnableDefenseOtherGuildPlayer={serv_enableDefenseOtherGuildPlayer}," +
+                                                $"CoopPlayerMaxNum={serv_coopPlayerMaxNum}," +
+                                                $"ServerPlayerMaxNum={serv_serverPlayerMaxNum}," +
+                                                $"ServerName=\"{serv_serverName}\"," +
+                                                $"ServerDescription=\"{serv_serverDescription}\"," +
+                                                $"AdminPassword=\"{serv_adminPassword}\"," +
+                                                $"ServerPassword=\"{serv_serverPassword}\"," +
+                                                $"PublicPort={serv_publicPort}," +
+                                                $"PublicIP=\"{serv_publicIP}\"," +
+                                                $"RCONEnabled={serv_rconEnabled}," +
+                                                $"RCONPort={serv_rconPort}," +
+                                                $"Region=\"{serv_region}\"," +
+                                                $"bUseAuth={serv_useAuth}," +
+                                                $"BanListURL=\"{serv_banListURL}\"," +
+                                                $"BaseCampMaxNumInGuild={serv_baseCampMaxNumInGuild}," +
+                                                $"bInvisibleOtherGuildBaseCampAreaFX={serv_bInvisibleOtherGuildBaseCampAreaFX}," +
+                                                $"AutoSaveSpan={serv_autoSaveSpan}," +
+                                                $"RESTAPIEnabled={serv_RESTAPIEnabled}," +
+                                                $"RESTAPIPort={serv_RESTAPIPort}," +
+                                                $"bShowPlayerList={serv_bShowPlayerList}," +
+                                                $"CrossplayPlatforms={serv_CrossplayPlatforms}," +
+                                                $"bIsUseBackupSaveData={serv_bIsUseBackupSaveData}," +
+                                                $"LogFormatType={serv_logFormatType}," +
+                                                $"SupplyDropSpan={serv_supplyDropSpan}," +
+                                                $"bAllowGobalPalboxImport={serv_bAllowGlobalPalboxImport}," +
+                                                $"bAllowGobalPalboxExport={serv_bAllowGlobalPalboxExport}," +
+                                                $"RanomizerType={serv_RandomizerType}," +
+                                                $"bIsRandomizerPalLevelRandom={serv_bIsRandomizerPalLevelRandom}," +
+                                                $"RandomizerSeed=\"{serv_RandomizerSeed}\"" +
+                                              $")";
                     File.WriteAllText(iniFilePath, newWorldSettings);
                     //return true to indicate success
                     return true;
@@ -744,6 +853,9 @@ namespace PalworldServerManager
             textBox_supplyDropSpan.Text = dserv_supplyDropSpan;
             comboBox_bAllowGlobalPalboxImport.Text = dserv_bAllowGlobalPalboxImport;
             comboBox_bAllowGlobalPalboxExport.Text = dserv_bAllowGlobalPalboxExport;
+            comboBox_RandomizerType.Text = dserv_RandomizerType;
+            comboBox_bIsRandomizerPalLevelRandom.Text = dserv_bIsRandomizerPalLevelRandom;
+            textBox_RandomizerSeed.Text = dserv_RandomizerSeed;
 
         }
 
@@ -848,9 +960,14 @@ namespace PalworldServerManager
             serv_logFormatType = textBox_logFormatType.Text;
             serv_supplyDropSpan = textBox_supplyDropSpan.Text;
 
-            // New 09/07/2025
+            // New 09/26/2025
             serv_bAllowGlobalPalboxImport = comboBox_bAllowGlobalPalboxImport.Text;
             serv_bAllowGlobalPalboxExport = comboBox_bAllowGlobalPalboxExport.Text;
+
+            // New 09/27/2025
+            serv_RandomizerType = comboBox_RandomizerType.Text;
+            serv_bIsRandomizerPalLevelRandom = comboBox_bIsRandomizerPalLevelRandom.Text;
+            serv_RandomizerSeed = textBox_RandomizerSeed.Text;
         }
 
 
@@ -956,10 +1073,14 @@ namespace PalworldServerManager
                 json_logFormatType = textBox_logFormatType.Text,
                 json_supplyDropSpan = textBox_supplyDropSpan.Text,
 
-                // New 09/07/2025
-
+                // New 09/26/2025
                 json_bAllowGlobalPalboxImport = comboBox_bAllowGlobalPalboxImport.Text,
                 json_bAllowGlobalPalboxExport = comboBox_bAllowGlobalPalboxExport.Text,
+
+                //New 09/27/2025
+                json_RandomizerType = comboBox_RandomizerType.Text,
+                json_bIsRandomizerPalLevelRandom = comboBox_bIsRandomizerPalLevelRandom.Text,
+                json_RandomizerSeed = textBox_RandomizerSeed.Text,
 
             };
 
@@ -1077,8 +1198,18 @@ namespace PalworldServerManager
                 textBox_logFormatType.Text = settings.json_logFormatType;
                 textBox_supplyDropSpan.Text = settings.json_supplyDropSpan;
 
+                //New 09/26/2025
                 comboBox_bAllowGlobalPalboxImport.Text = settings.json_bAllowGlobalPalboxImport;
                 comboBox_bAllowGlobalPalboxExport.Text = settings.json_bAllowGlobalPalboxExport;
+                
+                //New 09/27/2025
+                comboBox_RandomizerType.Text = settings.json_RandomizerType;
+                comboBox_bIsRandomizerPalLevelRandom.Text = settings.json_bIsRandomizerPalLevelRandom;
+                textBox_RandomizerSeed.Text = settings.json_RandomizerSeed;
+                
+                
+                
+                
                 //MessageBox.Show("Settings loaded successfully.");
             }
             else
@@ -1179,9 +1310,13 @@ namespace PalworldServerManager
                     json_bIsUseBackupSaveData = dserv_bIsUseBackupSaveData,
                     json_logFormatType = dserv_logFormatType,
                     json_supplyDropSpan = dserv_supplyDropSpan,
-                    // New 09/07/2025
+                    // New 09/26/2025
                     json_bAllowGlobalPalboxImport = dserv_bAllowGlobalPalboxImport,
-                    json_bAllowGlobalPalboxExport = dserv_bAllowGlobalPalboxExport
+                    json_bAllowGlobalPalboxExport = dserv_bAllowGlobalPalboxExport,
+                    // New 09/27/2025
+                    json_RandomizerType = dserv_RandomizerType,
+                    json_bIsRandomizerPalLevelRandom = dserv_bIsRandomizerPalLevelRandom,
+                    json_RandomizerSeed = dserv_RandomizerSeed,
 
                 };
 

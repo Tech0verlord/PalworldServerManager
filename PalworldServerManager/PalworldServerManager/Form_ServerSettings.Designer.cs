@@ -187,6 +187,12 @@ namespace PalworldServerManager
             comboBox_bAllowGlobalPalboxExport = new System.Windows.Forms.ComboBox();
             label64 = new System.Windows.Forms.Label();
             label86 = new System.Windows.Forms.Label();
+            comboBox_RandomizerType = new System.Windows.Forms.ComboBox();
+            comboBox_bIsRandomizerPalLevelRandom = new System.Windows.Forms.ComboBox();
+            label_RandomizerType = new System.Windows.Forms.Label();
+            label_bIsRandomizerPalLevelRandom = new System.Windows.Forms.Label();
+            label_RandomizerSeed = new System.Windows.Forms.Label();
+            textBox_RandomizerSeed = new System.Windows.Forms.TextBox();
             panel3 = new System.Windows.Forms.Panel();
             label71 = new System.Windows.Forms.Label();
             tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -453,6 +459,12 @@ namespace PalworldServerManager
             tableLayoutPanel_worldsettings.Controls.Add(comboBox_bAllowGlobalPalboxExport, 1, 73);
             tableLayoutPanel_worldsettings.Controls.Add(label64, 0, 72);
             tableLayoutPanel_worldsettings.Controls.Add(label86, 0, 73);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_RandomizerType, 1, 74);
+            tableLayoutPanel_worldsettings.Controls.Add(comboBox_bIsRandomizerPalLevelRandom, 1, 75);
+            tableLayoutPanel_worldsettings.Controls.Add(label_RandomizerType, 0, 74);
+            tableLayoutPanel_worldsettings.Controls.Add(label_bIsRandomizerPalLevelRandom, 0, 75);
+            tableLayoutPanel_worldsettings.Controls.Add(label_RandomizerSeed, 0, 76);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_RandomizerSeed, 1, 76);
             tableLayoutPanel_worldsettings.Name = "tableLayoutPanel_worldsettings";
             // 
             // comboBox_useAuth
@@ -1332,6 +1344,42 @@ namespace PalworldServerManager
             resources.ApplyResources(label86, "label86");
             label86.Name = "label86";
             // 
+            // comboBox_RandomizerType
+            // 
+            resources.ApplyResources(comboBox_RandomizerType, "comboBox_RandomizerType");
+            comboBox_RandomizerType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_RandomizerType.FormattingEnabled = true;
+            comboBox_RandomizerType.Items.AddRange(new object[] { resources.GetString("comboBox_RandomizerType.Items"), resources.GetString("comboBox_RandomizerType.Items1"), resources.GetString("comboBox_RandomizerType.Items2") });
+            comboBox_RandomizerType.Name = "comboBox_RandomizerType";
+            // 
+            // comboBox_bIsRandomizerPalLevelRandom
+            // 
+            resources.ApplyResources(comboBox_bIsRandomizerPalLevelRandom, "comboBox_bIsRandomizerPalLevelRandom");
+            comboBox_bIsRandomizerPalLevelRandom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox_bIsRandomizerPalLevelRandom.FormattingEnabled = true;
+            comboBox_bIsRandomizerPalLevelRandom.Items.AddRange(new object[] { resources.GetString("comboBox_bIsRandomizerPalLevelRandom.Items"), resources.GetString("comboBox_bIsRandomizerPalLevelRandom.Items1") });
+            comboBox_bIsRandomizerPalLevelRandom.Name = "comboBox_bIsRandomizerPalLevelRandom";
+            // 
+            // label_RandomizerType
+            // 
+            resources.ApplyResources(label_RandomizerType, "label_RandomizerType");
+            label_RandomizerType.Name = "label_RandomizerType";
+            // 
+            // label_bIsRandomizerPalLevelRandom
+            // 
+            resources.ApplyResources(label_bIsRandomizerPalLevelRandom, "label_bIsRandomizerPalLevelRandom");
+            label_bIsRandomizerPalLevelRandom.Name = "label_bIsRandomizerPalLevelRandom";
+            // 
+            // label_RandomizerSeed
+            // 
+            resources.ApplyResources(label_RandomizerSeed, "label_RandomizerSeed");
+            label_RandomizerSeed.Name = "label_RandomizerSeed";
+            // 
+            // textBox_RandomizerSeed
+            // 
+            resources.ApplyResources(textBox_RandomizerSeed, "textBox_RandomizerSeed");
+            textBox_RandomizerSeed.Name = "textBox_RandomizerSeed";
+            // 
             // panel3
             // 
             panel3.Controls.Add(label71);
@@ -1805,5 +1853,11 @@ namespace PalworldServerManager
         private System.Windows.Forms.ComboBox comboBox_bAllowGlobalPalboxExport;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.ComboBox comboBox_RandomizerType;
+        private System.Windows.Forms.ComboBox comboBox_bIsRandomizerPalLevelRandom;
+        private System.Windows.Forms.Label label_RandomizerType;
+        private System.Windows.Forms.Label label_bIsRandomizerPalLevelRandom;
+        private System.Windows.Forms.Label label_RandomizerSeed;
+        private System.Windows.Forms.TextBox textBox_RandomizerSeed;
     }
 }

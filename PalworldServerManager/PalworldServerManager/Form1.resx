@@ -129,10 +129,14 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="button_stopServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>498, 73</value>
+    <value>569, 97</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button_stopServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="button_stopServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 58</value>
+    <value>86, 77</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button_stopServer.TabIndex" type="System.Int32, mscorlib">
@@ -160,14 +164,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>727, 105</value>
+    <value>831, 140</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>5, 4, 5, 4</value>
   </data>
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 27</value>
+    <value>134, 36</value>
   </data>
   <data name="button5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -200,13 +203,13 @@
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 105</value>
+    <value>666, 140</value>
   </data>
   <data name="textBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>5, 4, 5, 4</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
+    <value>153, 26</value>
   </data>
   <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -233,13 +236,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>727, 72</value>
+    <value>831, 96</value>
   </data>
   <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>5, 4, 5, 4</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 27</value>
+    <value>134, 36</value>
   </data>
   <data name="button4.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -269,13 +272,13 @@
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 73</value>
+    <value>666, 97</value>
   </data>
   <data name="textBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>5, 4, 5, 4</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
+    <value>153, 26</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -305,10 +308,10 @@
     <value>0, 0</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+    <value>5, 0, 5, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>856, 68</value>
+    <value>978, 91</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -338,13 +341,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="button_startServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 73</value>
+    <value>326, 97</value>
   </data>
   <data name="button_startServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>5, 4, 5, 4</value>
   </data>
   <data name="button_startServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 58</value>
+    <value>235, 77</value>
   </data>
   <data name="button_startServer.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -374,13 +377,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="button_downloadServer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 104</value>
+    <value>16, 139</value>
   </data>
   <data name="button_downloadServer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>5, 4, 5, 4</value>
   </data>
   <data name="button_downloadServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 27</value>
+    <value>302, 36</value>
   </data>
   <data name="button_downloadServer.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -410,13 +413,13 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="button_downloadSteamCMD.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 73</value>
+    <value>16, 97</value>
   </data>
   <data name="button_downloadSteamCMD.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>5, 4, 5, 4</value>
   </data>
   <data name="button_downloadSteamCMD.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 27</value>
+    <value>302, 36</value>
   </data>
   <data name="button_downloadSteamCMD.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -446,10 +449,10 @@
     <value>0, 0</value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>5, 4, 5, 4</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>856, 159</value>
+    <value>978, 212</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -470,13 +473,13 @@
     <value>Fill</value>
   </data>
   <data name="panel_chilForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 183</value>
+    <value>0, 242</value>
   </data>
   <data name="panel_chilForm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>5, 4, 5, 4</value>
   </data>
   <data name="panel_chilForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>856, 637</value>
+    <value>978, 851</value>
   </data>
   <data name="panel_chilForm.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -497,121 +500,121 @@
     <value>114, 17</value>
   </metadata>
   <data name="serverSettingsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 22</value>
+    <value>247, 26</value>
   </data>
   <data name="serverSettingsToolStripMenuItem1.Text" xml:space="preserve">
     <value>Server Settings</value>
   </data>
   <data name="serverRestartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 22</value>
+    <value>247, 26</value>
   </data>
   <data name="serverRestartToolStripMenuItem.Text" xml:space="preserve">
     <value>Server Restart Schedule</value>
   </data>
   <data name="serverSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 20</value>
+    <value>121, 24</value>
   </data>
   <data name="serverSettingsToolStripMenuItem.Text" xml:space="preserve">
     <value>Server Settings</value>
   </data>
   <data name="rCONToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 20</value>
+    <value>63, 24</value>
   </data>
   <data name="rCONToolStripMenuItem.Text" xml:space="preserve">
     <value>RCON</value>
   </data>
   <data name="instructionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 22</value>
+    <value>161, 26</value>
   </data>
   <data name="instructionToolStripMenuItem.Text" xml:space="preserve">
     <value>Instruction</value>
   </data>
   <data name="infoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>55, 24</value>
   </data>
   <data name="infoToolStripMenuItem.Text" xml:space="preserve">
     <value>Help</value>
   </data>
   <data name="nexusModsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 22</value>
+    <value>173, 26</value>
   </data>
   <data name="nexusModsToolStripMenuItem.Text" xml:space="preserve">
     <value>Nexus Mods</value>
   </data>
   <data name="githubToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 22</value>
+    <value>173, 26</value>
   </data>
   <data name="githubToolStripMenuItem2.Text" xml:space="preserve">
     <value>Github</value>
   </data>
   <data name="updateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 20</value>
+    <value>72, 24</value>
   </data>
   <data name="updateToolStripMenuItem.Text" xml:space="preserve">
     <value>Update</value>
   </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
+    <value>143, 26</value>
   </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>English</value>
   </data>
   <data name="chineseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
+    <value>143, 26</value>
   </data>
   <data name="chineseToolStripMenuItem.Text" xml:space="preserve">
     <value>Chinese</value>
   </data>
   <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
+    <value>88, 24</value>
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Language</value>
   </data>
   <data name="baseDirectoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>188, 26</value>
   </data>
   <data name="baseDirectoryToolStripMenuItem.Text" xml:space="preserve">
     <value>Base Directory</value>
   </data>
   <data name="directoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 20</value>
+    <value>84, 24</value>
   </data>
   <data name="directoryToolStripMenuItem.Text" xml:space="preserve">
     <value>Directory</value>
   </data>
   <data name="githubToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
+    <value>163, 26</value>
   </data>
   <data name="githubToolStripMenuItem1.Text" xml:space="preserve">
     <value>Github</value>
   </data>
   <data name="repoPageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
+    <value>163, 26</value>
   </data>
   <data name="repoPageToolStripMenuItem.Text" xml:space="preserve">
     <value>Repository</value>
   </data>
   <data name="githubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 20</value>
+    <value>67, 24</value>
   </data>
   <data name="githubToolStripMenuItem.Text" xml:space="preserve">
     <value>Github</value>
   </data>
   <data name="discordWebhookToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 20</value>
+    <value>141, 24</value>
   </data>
   <data name="discordWebhookToolStripMenuItem.Text" xml:space="preserve">
     <value>Discord Webhook</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 159</value>
+    <value>0, 212</value>
   </data>
   <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 2, 0, 2</value>
+    <value>8, 3, 0, 3</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>856, 24</value>
+    <value>978, 30</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -635,10 +638,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+    <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>856, 820</value>
+    <value>978, 1093</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5152,16 +5155,16 @@
 </value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+    <value>5, 4, 5, 4</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>872, 859</value>
+    <value>994, 1130</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Palworld Server Manager - Tech0verlord Update v1.1</value>
+    <value>Palworld Server Manager - Tech0verlord Update v1.2</value>
   </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
