@@ -1240,6 +1240,7 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(label82, "label82");
             label82.Name = "label82";
+            toolTip1.SetToolTip(label82, resources.GetString("label82.ToolTip"));
             // 
             // label83
             // 
@@ -1338,11 +1339,13 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(label64, "label64");
             label64.Name = "label64";
+            toolTip1.SetToolTip(label64, resources.GetString("label64.ToolTip"));
             // 
             // label86
             // 
             resources.ApplyResources(label86, "label86");
             label86.Name = "label86";
+            toolTip1.SetToolTip(label86, resources.GetString("label86.ToolTip"));
             // 
             // comboBox_RandomizerType
             // 
@@ -1364,16 +1367,19 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(label_RandomizerType, "label_RandomizerType");
             label_RandomizerType.Name = "label_RandomizerType";
+            toolTip1.SetToolTip(label_RandomizerType, resources.GetString("label_RandomizerType.ToolTip"));
             // 
             // label_bIsRandomizerPalLevelRandom
             // 
             resources.ApplyResources(label_bIsRandomizerPalLevelRandom, "label_bIsRandomizerPalLevelRandom");
             label_bIsRandomizerPalLevelRandom.Name = "label_bIsRandomizerPalLevelRandom";
+            toolTip1.SetToolTip(label_bIsRandomizerPalLevelRandom, resources.GetString("label_bIsRandomizerPalLevelRandom.ToolTip"));
             // 
             // label_RandomizerSeed
             // 
             resources.ApplyResources(label_RandomizerSeed, "label_RandomizerSeed");
             label_RandomizerSeed.Name = "label_RandomizerSeed";
+            toolTip1.SetToolTip(label_RandomizerSeed, resources.GetString("label_RandomizerSeed.ToolTip"));
             // 
             // textBox_RandomizerSeed
             // 
