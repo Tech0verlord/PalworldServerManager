@@ -2,7 +2,7 @@
 _DOWNLOAD:_ [Download Latest](https://github.com/Tech0verlord/PalworldServerManager/releases/latest)    
 
 > [!NOTE]
-Last Tested Game Version: **`v0.6.6.79318`** using PSM: **`Tech0verlord Update - v1.2`**   
+Last Tested Game Version: **`v0.6.7.79736`** using PSM: **`Tech0verlord Update - v1.3`**   
 Current PSM Language Options Available: **`English`** **`Chinese (Not Updated)`**
 
 _Quick Updates_
@@ -11,6 +11,17 @@ Hello! I found this server manager and found it was outdated and did not support
 I have no experience in Visual Studio nor C#, and the last time I messed with coding was back in 2015, and that was in Java.
 
 So far, I've managed to swap out the old AllowedConnectPlatform for CrossplayPlatforms, and added config options for the Global Palbox.
+
+_New Configs Added So Far_
+-----------------------
+
+* CrossplayPlatforms
+* bAllowGlobalPalboxImport
+* bAllowGlobalPalboxExport
+* RandomizerType
+* IsRandomizerPalLevelRandom
+* RandomizerSeed
+* ItemWeightRate
 
 
 

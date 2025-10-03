@@ -201,7 +201,7 @@ namespace PalworldServerManager
             // updateToolStripMenuItem
             // 
             updateToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            updateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { nexusModsToolStripMenuItem, githubToolStripMenuItem2 });
+            updateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { githubToolStripMenuItem2, nexusModsToolStripMenuItem });
             updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             resources.ApplyResources(updateToolStripMenuItem, "updateToolStripMenuItem");
             // 

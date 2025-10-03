@@ -535,17 +535,17 @@
   <data name="infoToolStripMenuItem.Text" xml:space="preserve">
     <value>Help</value>
   </data>
-  <data name="nexusModsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 26</value>
-  </data>
-  <data name="nexusModsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Nexus Mods</value>
-  </data>
   <data name="githubToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 26</value>
+    <value>250, 26</value>
   </data>
   <data name="githubToolStripMenuItem2.Text" xml:space="preserve">
     <value>Github</value>
+  </data>
+  <data name="nexusModsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 26</value>
+  </data>
+  <data name="nexusModsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nexus Mods (Outdated)</value>
   </data>
   <data name="updateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 24</value>
@@ -5164,7 +5164,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Palworld Server Manager - Tech0verlord Update v1.2</value>
+    <value>Palworld Server Manager - Tech0verlord Update v1.3</value>
   </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>

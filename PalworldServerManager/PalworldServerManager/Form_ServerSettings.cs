@@ -274,13 +274,20 @@ namespace PalworldServerManager
         private string serv_bAllowGlobalPalboxExport;
 
         // New 09/27/25
-        
+        //Randomizer Settings, unfortunately, sorta useless as World is seeded at save creation,
+        //and cannot be modified afterwords
+
         //
         private string serv_RandomizerType;
         //
         private string serv_bIsRandomizerPalLevelRandom;
         //
         private string serv_RandomizerSeed;
+
+        // NEW 10/03/25
+
+        //
+        private string serv_ItemWeightRate;
 
         /// <summary>
         /// DEFAULT SERVER WORLD SETTINGS
@@ -380,6 +387,7 @@ namespace PalworldServerManager
         private string dserv_RandomizerType = "None";
         private string dserv_bIsRandomizerPalLevelRandom = "False";
         private string dserv_RandomizerSeed = "";
+        private string dserv_ItemWeightRate = "1.0";
 
         public class ServerSettingsPreset
         {
@@ -508,6 +516,9 @@ namespace PalworldServerManager
 
             //
             public string json_RandomizerSeed { get; set; }
+
+            //
+            public string json_ItemWeightRate { get; set; }
         }
 
 
@@ -739,7 +750,8 @@ namespace PalworldServerManager
                                                 $"bAllowGobalPalboxExport={serv_bAllowGlobalPalboxExport}," +
                                                 $"RanomizerType={serv_RandomizerType}," +
                                                 $"bIsRandomizerPalLevelRandom={serv_bIsRandomizerPalLevelRandom}," +
-                                                $"RandomizerSeed=\"{serv_RandomizerSeed}\"" +
+                                                $"RandomizerSeed=\"{serv_RandomizerSeed}\"," +
+                                                $"ItemWeightRate={serv_ItemWeightRate}," +
                                               $")";
                     File.WriteAllText(iniFilePath, newWorldSettings);
                     //return true to indicate success
@@ -856,6 +868,7 @@ namespace PalworldServerManager
             comboBox_RandomizerType.Text = dserv_RandomizerType;
             comboBox_bIsRandomizerPalLevelRandom.Text = dserv_bIsRandomizerPalLevelRandom;
             textBox_RandomizerSeed.Text = dserv_RandomizerSeed;
+            textBox_ItemWeightRate.Text = dserv_ItemWeightRate;
 
         }
 
@@ -968,6 +981,10 @@ namespace PalworldServerManager
             serv_RandomizerType = comboBox_RandomizerType.Text;
             serv_bIsRandomizerPalLevelRandom = comboBox_bIsRandomizerPalLevelRandom.Text;
             serv_RandomizerSeed = textBox_RandomizerSeed.Text;
+
+            //NEW 10/03/2025
+            serv_ItemWeightRate = textBox_ItemWeightRate.Text;
+
         }
 
 
@@ -1081,6 +1098,10 @@ namespace PalworldServerManager
                 json_RandomizerType = comboBox_RandomizerType.Text,
                 json_bIsRandomizerPalLevelRandom = comboBox_bIsRandomizerPalLevelRandom.Text,
                 json_RandomizerSeed = textBox_RandomizerSeed.Text,
+
+                // New 10/03/2025
+                json_ItemWeightRate = textBox_ItemWeightRate.Text,
+
 
             };
 
@@ -1206,10 +1227,13 @@ namespace PalworldServerManager
                 comboBox_RandomizerType.Text = settings.json_RandomizerType;
                 comboBox_bIsRandomizerPalLevelRandom.Text = settings.json_bIsRandomizerPalLevelRandom;
                 textBox_RandomizerSeed.Text = settings.json_RandomizerSeed;
-                
-                
-                
-                
+
+                // New 10/03/2025
+                textBox_ItemWeightRate.Text = settings.json_ItemWeightRate;
+
+
+
+
                 //MessageBox.Show("Settings loaded successfully.");
             }
             else
@@ -1317,6 +1341,8 @@ namespace PalworldServerManager
                     json_RandomizerType = dserv_RandomizerType,
                     json_bIsRandomizerPalLevelRandom = dserv_bIsRandomizerPalLevelRandom,
                     json_RandomizerSeed = dserv_RandomizerSeed,
+                    // New 10/03/2025
+                    json_ItemWeightRate = dserv_ItemWeightRate,
 
                 };
 

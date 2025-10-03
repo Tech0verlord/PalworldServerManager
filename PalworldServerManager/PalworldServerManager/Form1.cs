@@ -511,14 +511,14 @@ namespace PalworldServerManager
 
         private void githubToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            string githubUrl = @"https://github.com/Tianyu-00";
+            string githubUrl = @"https://github.com/Tech0verlord";
 
             OpenURLGiven(githubUrl);
         }
 
         private void repoPageToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string githubRepoUrl = "https://github.com/TianYu-00/PalworldServerManager";
+            string githubRepoUrl = "https://github.com/Tech0verlord/PalworldServerManager";
             OpenURLGiven(githubRepoUrl);
 
         }
@@ -573,7 +573,7 @@ namespace PalworldServerManager
 
         private void githubToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            string Url = @"https://github.com/TianYu-00/PalworldServerManager/releases/latest";
+            string Url = @"https://github.com/Tech0verlord/PalworldServerManager/releases/latest";
 
             OpenURLGiven(Url);
         }

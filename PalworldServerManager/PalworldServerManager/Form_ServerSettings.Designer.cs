@@ -193,6 +193,8 @@ namespace PalworldServerManager
             label_bIsRandomizerPalLevelRandom = new System.Windows.Forms.Label();
             label_RandomizerSeed = new System.Windows.Forms.Label();
             textBox_RandomizerSeed = new System.Windows.Forms.TextBox();
+            textBox_ItemWeightRate = new System.Windows.Forms.TextBox();
+            label_ItemWeightRate = new System.Windows.Forms.Label();
             panel3 = new System.Windows.Forms.Panel();
             label71 = new System.Windows.Forms.Label();
             tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -465,6 +467,8 @@ namespace PalworldServerManager
             tableLayoutPanel_worldsettings.Controls.Add(label_bIsRandomizerPalLevelRandom, 0, 75);
             tableLayoutPanel_worldsettings.Controls.Add(label_RandomizerSeed, 0, 76);
             tableLayoutPanel_worldsettings.Controls.Add(textBox_RandomizerSeed, 1, 76);
+            tableLayoutPanel_worldsettings.Controls.Add(textBox_ItemWeightRate, 1, 77);
+            tableLayoutPanel_worldsettings.Controls.Add(label_ItemWeightRate, 0, 77);
             tableLayoutPanel_worldsettings.Name = "tableLayoutPanel_worldsettings";
             // 
             // comboBox_useAuth
@@ -1386,6 +1390,17 @@ namespace PalworldServerManager
             resources.ApplyResources(textBox_RandomizerSeed, "textBox_RandomizerSeed");
             textBox_RandomizerSeed.Name = "textBox_RandomizerSeed";
             // 
+            // textBox_ItemWeightRate
+            // 
+            resources.ApplyResources(textBox_ItemWeightRate, "textBox_ItemWeightRate");
+            textBox_ItemWeightRate.Name = "textBox_ItemWeightRate";
+            // 
+            // label_ItemWeightRate
+            // 
+            resources.ApplyResources(label_ItemWeightRate, "label_ItemWeightRate");
+            label_ItemWeightRate.Name = "label_ItemWeightRate";
+            toolTip1.SetToolTip(label_ItemWeightRate, resources.GetString("label_ItemWeightRate.ToolTip"));
+            // 
             // panel3
             // 
             panel3.Controls.Add(label71);
@@ -1456,6 +1471,7 @@ namespace PalworldServerManager
             // 
             resources.ApplyResources(textBox_onServerCmdCrashRestartInterval, "textBox_onServerCmdCrashRestartInterval");
             textBox_onServerCmdCrashRestartInterval.Name = "textBox_onServerCmdCrashRestartInterval";
+            toolTip1.SetToolTip(textBox_onServerCmdCrashRestartInterval, resources.GetString("textBox_onServerCmdCrashRestartInterval.ToolTip"));
             // 
             // label73
             // 
@@ -1865,5 +1881,7 @@ namespace PalworldServerManager
         private System.Windows.Forms.Label label_bIsRandomizerPalLevelRandom;
         private System.Windows.Forms.Label label_RandomizerSeed;
         private System.Windows.Forms.TextBox textBox_RandomizerSeed;
+        private System.Windows.Forms.TextBox textBox_ItemWeightRate;
+        private System.Windows.Forms.Label label_ItemWeightRate;
     }
 }
