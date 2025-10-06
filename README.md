@@ -23,7 +23,7 @@ _New Configs Added So Far_
 * RandomizerSeed
 * ItemWeightRate
 
-
+NOTE: Randomizer settings don't seem to do anything on dedicated servers. From my experience, if you want to use the randomlizer, you have to create a Single Player world with the randomizer enabled, then copy and paste that save to overwrite the server's save.
 
 _Current Previews_
 -----------------------
